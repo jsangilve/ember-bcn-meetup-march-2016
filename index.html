@@ -54,6 +54,7 @@
 					</p>
           </br>
           <p>I've been using Ember for 14 months</p>
+          <aside class="notes">If you are not starting a new application and you want to use Ember with existent or legacy apis</aside>
         </section>
 
         <section data-background="#777">
@@ -73,7 +74,7 @@
           <p style="margin-top:0">
             <small><a href="http://www.jsonapi.org">www.jsonapi.org</a></small>
           </p>
-          <p>JSON API specification is the default JSON format followed by Ember Data since <span class="highlight">Ember Data 2.0</span> (It was introduced with Ember 1.3)</p>
+          <p>JSON API specification is the default JSON format followed by Ember Data since <span class="highlight">Ember Data 2.0</span> (It was introduced with Ember 1.13)</p>
           <aside class="notes">This has been created by Yehuda Katz, Steve Klabnik and a bunch of intelligent guys</aside>
           <p class="fragment">It looks like this...</p>
 				</section>
@@ -143,6 +144,7 @@
           <p class="fragment"><small>Tell Ember how to format data sent and received from the server</small></p>
           <ul>
             <li class="fragment highlight">DS.Serializer</li>
+            <li class="fragment highlight">DS.JSONSerializer</li>
             <li class="fragment highlight">DS.RESTSerializer</li>
             <li class="fragment highlight">DS.JSONAPISerializer</li>
           </ul>
@@ -176,6 +178,7 @@
             <li class="fragment highlight">DS.JSONSerializer</li>
             <li class="fragment highlight">DS.RESTSerializer</li>
           </ol>
+          <aside class="notes">RESTSerializer extends JSON Serializer</aside>
         </section>
 
         <section data-background="#67291C">
@@ -274,7 +277,7 @@ HTTP GET /api/team/1
     "manager": "Claudio Ranieri", 
     "league": 1
   },
-  league: {
+  "league": {
     "id": 1, 
     "name": "Premier League", 
     "confederation": "UEFA", 
